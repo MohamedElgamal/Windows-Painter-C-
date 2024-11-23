@@ -37,28 +37,7 @@ To create and run a GLUT project in C++ on Windows, follow these steps:
 ---
 
 ### **4. Write a GLUT Program**
-Example program: `main.cpp`
-```cpp
-#include <GL/glut.h>
-
-void display() {
-    glClear(GL_COLOR_BUFFER_BIT); // Clear the color buffer
-    glBegin(GL_TRIANGLES); // Draw a triangle
-        glVertex2f(-0.5f, -0.5f);
-        glVertex2f(0.5f, -0.5f);
-        glVertex2f(0.0f, 0.5f);
-    glEnd();
-    glFlush(); // Render the graphics
-}
-
-int main(int argc, char** argv) {
-    glutInit(&argc, argv); // Initialize GLUT
-    glutCreateWindow("GLUT Triangle"); // Create a window
-    glutDisplayFunc(display); // Set display callback
-    glutMainLoop(); // Enter the event-processing loop
-    return 0;
-}
-```
+Place the main.cpp file into project direcotry
 
 ---
 
